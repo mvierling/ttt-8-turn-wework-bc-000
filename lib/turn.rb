@@ -1,4 +1,4 @@
-require_relative valid_move
+require_relative 'lib/valid_move'
 
 def turn(board)
   puts "Please enter 1-9:"
