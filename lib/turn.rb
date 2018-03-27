@@ -1,4 +1,5 @@
 require_relative 'valid_move'
+require_relative 'move'
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -7,6 +8,6 @@ def turn(board)
   if valid_move?(board, index) == true
     puts "success!"
   else
-    puts "fail!"
+    turn(board)
   end
 end
